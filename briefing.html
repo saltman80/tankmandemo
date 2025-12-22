@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NeonFront Command - Mission Briefing. Plan your tactical assault in this neon-drenched strategy game.">
+    <title>Mission Briefing - NeonFront Command</title>
+    <link rel="canonical" href="https://neonfrontcommand.com/briefing.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
+        <nav class="main-nav tmc-nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="logo-section tmc-logo">
+                    <a href="index.html" class="logo-link" aria-label="NeonFront Command Home">
+                        <svg class="logo-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 28L16 4L28 28H4Z" stroke="url(#cyan-magenta)" stroke-width="2" fill="none"/>
+                            <path d="M16 12V24" stroke="url(#cyan-magenta)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="cyan-magenta" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#00F0FF;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FF00FF;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">
+                            <span class="logo-neon">NeonFront</span>
+                            <span class="logo-command">Command</span>
+                        </span>
+                    </a>
+                </div>
+                
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html" class="nav-item tmc-link" data-route="/" data-tmc-id="nav-home">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gameplay.html" class="nav-item tmc-link" data-route="/gameplay" data-tmc-id="nav-gameplay">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 7.5C6 6.11929 7.11929 5 8.5 5H15.5C16.8807 5 18 6.11929 18 7.5V16.5C18 17.8807 16.8807 19 15.5 19H8.5C7.11929 19 6 17.8807 6 16.5V7.5Z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="9.5" cy="10.5" r="1" fill="currentColor"/>
+                                <circle cx="14.5" cy="13.5" r="1" fill="currentColor"/>
+                            </svg>
+                            <span>GAMEPLAY</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="garage.html" class="nav-item tmc-link" data-route="/garage" data-tmc-id="nav-units">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L12 14L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <rect x="4" y="8" width="16" height="10" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>UNITS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="briefing.html" class="nav-item active tmc-link" data-route="/briefing" data-tmc-id="nav-briefing">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="12,2 2,7 12,12 22,7" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>LORE</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="results.html" class="nav-item tmc-link" data-route="/community" data-tmc-id="nav-community">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>COMMUNITY</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <button class="btn-login tmc-cta" aria-label="Login to your account">LOGIN</button>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="page-title-bar">
+            <h1 class="page-title">MISSION BRIEFING</h1>
+        </div>
+    </header>
+    
+    <main id="main-content" role="main">
+        <div class="briefing-container">
+            <aside class="sidebar-left" role="complementary" aria-label="Mission navigation">
+                <nav class="mission-nav">
+                    <button class="mission-nav-item active" data-section="map" aria-label="View mission map">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 38L16 34L32 40L40 36V10L32 14L16 8L8 12V38Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M16 8V34M32 14V40" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="20" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span>MAP</span>
+                    </button>
+                    
+                    <button class="mission-nav-item" data-section="objectives" aria-label="View mission objectives">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 8V16M24 32V40M8 24H16M32 24H40" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>OBJECTIVES</span>
+                    </button>
+                    
+                    <button class="mission-nav-item" data-section="intel" aria-label="View intelligence reports">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="8" width="28" height="32" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <rect x="14" y="14" width="8" height="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M26 16H34M26 20H34M14 28H34M14 32H34" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>INTEL</span>
+                    </button>
+                    
+                    <button class="mission-nav-item" data-section="scanning" aria-label="Scanning analysis">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="16" width="18" height="12" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M8 22H26M14 16V28M20 16V28" stroke="currentColor" stroke-width="2"/>
+                            <path d="M28 12L38 24L28 36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>SCANTING</span>
+                    </button>
+                    
+                    <button class="mission-nav-item" data-section="loadout" aria-label="Configure unit loadout">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 28L18 24L24 28L30 24L36 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 14H38L34 22H14L10 14Z" stroke="currentColor" stroke-width="2"/>
+                            <rect x="14" y="28" width="20" height="8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>LOADOUT</span>
+                    </button>
+                    
+                    <button class="mission-nav-item" data-section="settings" aria-label="Mission settings">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M24 8V12M24 36V40M8 24H12M36 24H40M13.5 13.5L16.5 16.5M31.5 31.5L34.5 34.5M34.5 13.5L31.5 16.5M16.5 31.5L13.5 34.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>SETTINGS</span>
+                    </button>
+                </nav>
+            </aside>
+            
+            <section class="mission-content" aria-labelledby="mission-title">
+                <article class="mission-card">
+                    <header class="mission-header">
+                        <div class="mission-header-decoration">
+                            <svg width="80" height="4" viewBox="0 0 80 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="80" height="4" fill="url(#cyan-grad)"/>
+                                <defs>
+                                    <linearGradient id="cyan-grad" x1="0" y1="0" x2="80" y2="0">
+                                        <stop offset="0%" style="stop-color:#00F0FF;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#00F0FF;stop-opacity:0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2 id="mission-title" class="mission-title">
+                            <span class="mission-title-label">MISSION:</span>
+                            <span class="mission-title-name">NEON STRIKE</span>
+                        </h2>
+                        <div class="mission-title-accent"></div>
+                    </header>
+                    
+                    <div class="mission-description">
+                        <p>NEONTAX COMMAND han+rbad corremanitcaeion to secure data briefing. Experience AI-powepaly hvorum talische ch+moral faces tank and rrods in an architacto and arset for a neon drenched the digital realm. Hreliwand to retricyef nerrioriatos the missions of map wappond mo's waypointt route.</p>
+                    </div>
+                    
+                    <div class="mission-map-container" data-tmc-panel="minimap">
+                        <img src="https://im.runware.ai/image/ws/2/ii/a8753589-c348-4c5b-95b6-ca43394d6bf8.jpg" alt="Tactical mission map showing objectives" class="mission-map-bg">
+                        <svg class="mission-map-overlay briefing-map" viewBox="0 0 640 640" preserveAspectRatio="xMidYMid meet">
+                            <!-- Topographic style lines -->
+                            <g class="topo-lines" stroke="#00F0FF" stroke-width="1.5" fill="none" opacity="0.6">
+                                <path d="M100,150 Q200,140 300,160 T500,150"/>
+                                <path d="M80,200 Q180,185 280,210 T520,200"/>
+                                <path d="M90,250 Q190,235 290,260 T510,250"/>
+                                <path d="M110,300 Q210,285 310,310 T530,300"/>
+                                <path d="M100,350 Q200,335 300,360 T520,350"/>
+                                <path d="M85,400 Q185,385 285,410 T505,400"/>
+                                <path d="M95,450 Q195,435 295,460 T515,450"/>
+                                <path d="M105,500 Q205,485 305,510 T525,500"/>
+                            </g>
+                            
+                            <!-- Path from start to objectives -->
+                            <g class="mission-path" stroke="#FF00FF" stroke-width="3" fill="none" opacity="0.8">
+                                <path d="M150,520 Q200,450 280,400 T380,300" stroke-dasharray="8 4">
+                                    <animate attributeName="stroke-dashoffset" from="0" to="24" dur="1.5s" repeatCount="indefinite"/>
+                                </path>
+                                <path d="M380,300 L450,250" stroke-dasharray="8 4">
+                                    <animate attributeName="stroke-dashoffset" from="0" to="24" dur="1.5s" repeatCount="indefinite"/>
+                                </path>
+                                <path d="M380,300 Q420,380 450,450" stroke-dasharray="8 4">
+                                    <animate attributeName="stroke-dashoffset" from="0" to="24" dur="1.5s" repeatCount="indefinite"/>
+                                </path>
+                            </g>
+                            
+                            <!-- Tank icons -->
+                            <g class="tank-icon" transform="translate(150, 520)">
+                                <rect x="-12" y="-8" width="24" height="16" fill="#FF00FF" stroke="#FF00FF" stroke-width="2"/>
+                                <rect x="-8" y="-12" width="16" height="8" fill="#FF00FF"/>
+                                <circle cx="0" cy="0" r="20" fill="none" stroke="#FF00FF" stroke-width="1" opacity="0.3"/>
+                            </g>
+                            
+                            <g class="tank-icon" transform="translate(280, 510)">
+                                <rect x="-12" y="-8" width="24" height="16" fill="#FF00FF" stroke="#FF00FF" stroke-width="2"/>
+                                <rect x="-8" y="-12" width="16" height="8" fill="#FF00FF"/>
+                            </g>
+                            
+                            <g class="tank-icon" transform="translate(450, 250)">
+                                <rect x="-12" y="-8" width="24" height="16" fill="#FF00FF" stroke="#FF00FF" stroke-width="2"/>
+                                <rect x="-8" y="-12" width="16" height="8" fill="#FF00FF"/>
+                            </g>
+                            
+                            <g class="tank-icon" transform="translate(320, 490)">
+                                <rect x="-12" y="-8" width="24" height="16" fill="#FF00FF" stroke="#FF00FF" stroke-width="2"/>
+                                <rect x="-8" y="-12" width="16" height="8" fill="#FF00FF"/>
+                            </g>
+                            
+                            <!-- Enemy outpost icons -->
+                            <g class="outpost-icon" transform="translate(420, 180)">
+                                <rect x="-16" y="-12" width="32" height="24" fill="#FF00FF" stroke="#FF00FF" stroke-width="2"/>
+                                <rect x="-12" y="-18" width="24" height="10" fill="#FF00FF"/>
+                                <rect x="-4" y="-24" width="8" height="8" fill="#FF00FF"/>
+                            </g>
+                            
+                            <!-- Data terminal icon -->
+                            <g class="terminal-icon" transform="translate(380, 370)">
+                                <circle cx="0" cy="0" r="8" fill="#FF00FF"/>
+                                <rect x="-6" y="8" width="12" height="12" fill="#FF00FF" stroke="#FF00FF" stroke-width="2"/>
+                                <line x1="-8" y1="20" x2="8" y2="20" stroke="#FF00FF" stroke-width="3"/>
+                            </g>
+                            
+                            <!-- Asset objective -->
+                            <g class="asset-icon" transform="translate(470, 480)">
+                                <rect x="-10" y="-14" width="20" height="28" fill="#FF00FF" stroke="#FF00FF" stroke-width="2"/>
+                                <polygon points="0,-18 -8,-14 8,-14" fill="#FF00FF"/>
+                            </g>
+                            
+                            <!-- Objective callouts -->
+                            <g class="objective-alpha">
+                                <rect x="480" y="150" width="150" height="70" fill="rgba(10,14,26,0.85)" stroke="#FF00FF" stroke-width="2" rx="4"/>
+                                <text x="490" y="172" fill="#00F0FF" font-size="11" font-weight="600">OBJECTIVE ALPHA:</text>
+                                <text x="490" y="190" fill="#FFFFFF" font-size="13" font-weight="700">NEUTRALIZE</text>
+                                <text x="490" y="206" fill="#FFFFFF" font-size="13" font-weight="700">ENEMY OUTPOST</text>
+                                <line x1="480" y1="185" x2="420" y2="185" stroke="#FF00FF" stroke-width="2"/>
+                                <circle cx="480" cy="185" r="3" fill="#FF00FF"/>
+                            </g>
+                            
+                            <g class="objective-beta">
+                                <rect x="490" y="340" width="140" height="70" fill="rgba(10,14,26,0.85)" stroke="#FF00FF" stroke-width="2" rx="4"/>
+                                <text x="500" y="362" fill="#00F0FF" font-size="11" font-weight="600">OBJECTIVE BETA:</text>
+                                <text x="500" y="380" fill="#FFFFFF" font-size="13" font-weight="700">SECURE DATA</text>
+                                <text x="500" y="396" fill="#FFFFFF" font-size="13" font-weight="700">TERMINAL</text>
+                                <line x1="490" y1="375" x2="390" y2="372" stroke="#FF00FF" stroke-width="2"/>
+                                <circle cx="490" cy="375" r="3" fill="#FF00FF"/>
+                            </g>
+                            
+                            <g class="objective-gamma">
+                                <rect x="490" y="465" width="140" height="70" fill="rgba(10,14,26,0.85)" stroke="#FF00FF" stroke-width="2" rx="4"/>
+                                <text x="500" y="487" fill="#00F0FF" font-size="11" font-weight="600">OBJECTIVE GAMMA:</text>
+                                <text x="500" y="505" fill="#FFFFFF" font-size="13" font-weight="700">EXTRACT</text>
+                                <text x="500" y="521" fill="#FFFFFF" font-size="13" font-weight="700">ASSET</text>
+                                <line x1="490" y1="500" x2="480" y2="485" stroke="#FF00FF" stroke-width="2"/>
+                                <circle cx="490" cy="500" r="3" fill="#FF00FF"/>
+                            </g>
+                        </svg>
+                        <div class="map-grid-overlay"></div>
+                    </div>
+                    
+                    <div class="tech-readout">
+                        <span class="readout-text">TACTICAL-GRID: ACTIVE // SCAN-DEPTH: 2.4KM // THREAT-LEVEL: HIGH</span>
+                    </div>
+                </article>
+            </section>
+            
+            <aside class="sidebar-right" role="complementary" aria-label="Mission parameters">
+                <div class="mission-params">
+                    <div class="param-card">
+                        <div class="param-label">WEATHER:</div>
+                        <div class="param-value">CLEAR [DIGITAL]</div>
+                    </div>
+                    
+                    <div class="param-card">
+                        <div class="param-label">TIME:</div>
+                        <div class="param-value">0200 HOURS</div>
+                    </div>
+                    
+                    <div class="param-card">
+                        <div class="param-label">DIFFICULTY:</div>
+                        <div class="param-value">HARD</div>
+                    </div>
+                    
+                    <button class="btn-launch" aria-label="Launch mission" data-tmc-id="launch-btn">
+                        LAUNCH MISSION
+                    </button>
+                </div>
+                
+                <div class="tech-decoration">
+                    <svg width="100%" height="80" viewBox="0 0 240 80" preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="tech-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#00F0FF;stop-opacity:0.2" />
+                                <stop offset="50%" style="stop-color:#00F0FF;stop-opacity:0.6" />
+                                <stop offset="100%" style="stop-color:#00F0FF;stop-opacity:0.2" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M0,40 L60,20 L120,50 L180,30 L240,40" stroke="url(#tech-grad)" stroke-width="2" fill="none"/>
+                        <circle cx="60" cy="20" r="3" fill="#00F0FF" opacity="0.6">
+                            <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="120" cy="50" r="3" fill="#00F0FF" opacity="0.6">
+                            <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="180" cy="30" r="3" fill="#00F0FF" opacity="0.6">
+                            <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                    </svg>
+                </div>
+            </aside>
+        </div>
+    </main>
+    
+    <footer role="contentinfo" class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-neon">NeonFront</span>
+                        <span class="logo-command">Command</span>
+                    </div>
+                    <p class="footer-tagline">Command the future of tactical warfare</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gameplay.html">Gameplay</a></li>
+                        <li><a href="garage.html">Units</a></li>
+                        <li><a href="briefing.html">Briefing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-legal">
+                    <p>&copy; 2024 NeonFront Command. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script defer src="app.js"></script>
+    <script>
+        (function(){
+            // Provide a minimal TankManapp API shim if app.js doesn't provide one yet.
+            if (!window.TankManapp) {
+                window.TankManapp = {
+                    _modules: {},
+                    init: function() {
+                        // wire top nav tmc-links
+                        document.querySelectorAll('.tmc-nav .tmc-link').forEach(a=>{
+                            a.addEventListener('click', function(e){
+                                // emit a navigation intent event
+                                var route = this.getAttribute('data-route') || this.getAttribute('href');
+                                window.dispatchEvent(new CustomEvent('tmc:navigate', {detail:{route: route, tmcId: this.getAttribute('data-tmc-id')}}));
+                                // visual highlight
+                                document.querySelectorAll('.tmc-nav .tmc-link').forEach(el=> el.classList.remove('active'));
+                                this.classList.add('active');
+                            });
+                        });
+
+                        // mission side nav behavior
+                        document.querySelectorAll('.mission-nav-item').forEach(item => {
+                            item.addEventListener('click', function() {
+                                document.querySelectorAll('.mission-nav-item').forEach(i => i.classList.remove('active'));
+                                this.classList.add('active');
+                                window.dispatchEvent(new CustomEvent('tmc:side-nav', {detail:{section: this.getAttribute('data-section')}}));
+                            });
+                        });
+
+                        // launch mission: emit event and show toast; preserve a fallback navigation
+                        var launchBtn = document.querySelector('.btn-launch');
+                        if (launchBtn) {
+                            launchBtn.addEventListener('click', function() {
+                                this.classList.add('launching');
+                                window.dispatchEvent(new CustomEvent('tmc:launch-mission', {detail:{tmcId: this.getAttribute('data-tmc-id')}}));
+                                window.TankManapp.showToast({message: 'Launching mission...', timeout: 1500});
+                                // fallback behavior to preserve UX (consumers can override by listening to tmc:launch-mission)
+                                setTimeout(function(){
+                                    window.location.href = 'gameplay.html';
+                                }, 800);
+                            });
+                        }
+
+                        // map overlay entrance animation
+                        window.addEventListener('load', function() {
+                            const mapOverlay = document.querySelector('.mission-map-overlay');
+                            if (mapOverlay) {
+                                mapOverlay.style.opacity = '0';
+                                setTimeout(() => {
+                                    mapOverlay.style.transition = 'opacity 1s ease-in';
+                                    mapOverlay.style.opacity = '1';
+                                }, 300);
+                            }
+                        });
+
+                        // signal readiness
+                        window.dispatchEvent(new CustomEvent('tmc:nav-ready'));
+                    },
+                    highlightNav: function(pathname) {
+                        document.querySelectorAll('.tmc-nav .tmc-link').forEach(a => {
+                            var route = a.getAttribute('data-route') || a.getAttribute('href');
+                            if (route && pathname && (route === pathname || route === pathname.replace('.html',''))) {
+                                a.classList.add('active');
+                            } else {
+                                a.classList.remove('active');
+                            }
+                        });
+                    },
+                    showToast: function(opts) {
+                        var container = document.getElementById('tmc-toast-container');
+                        if (!container) return;
+                        var toast = document.createElement('div');
+                        toast.className = 'tmc-toast';
+                        toast.setAttribute('role','status');
+                        toast.textContent = (opts && opts.message) ? opts.message : 'Notification';
+                        container.appendChild(toast);
+                        window.dispatchEvent(new CustomEvent('tmc:toast-show', {detail: opts || {}}));
+                        var timeout = (opts && opts.timeout) || 4000;
+                        setTimeout(function(){
+                            toast.classList.add('tmc-toast-hide');
+                            setTimeout(function(){ if (toast.parentNode) toast.parentNode.removeChild(toast); }, 300);
+                        }, timeout);
+                    },
+                    toggleUI: function(id, state) {
+                        var el = document.getElementById(id);
+                        if (!el) return;
+                        el.style.display = state ? '' : 'none';
+                    },
+                    registerModule: function(name, opts) {
+                        this._modules[name] = opts;
+                    }
+                };
+            }
+
+            // initialize when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function(){ window.TankManapp.init(); });
+            } else {
+                window.TankManapp.init();
+            }
+        })();
+    </script>
+
+    <div id="tmc-toast-container" role="status" aria-live="polite"></div>
+</body>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --neon-cyan: #00F0FF;
+    --neon-magenta: #FF00FF;
+    --hot-pink: #FF0099;
+    --deep-navy: #0A0E1A;
+    --dark-blue: #0D1B2E;
+    --rich-purple: #1A0B2E;
+    --bright-cyan: #00FFFF;
+    --purple-glow: #AA00FF;
+    --text-white: #FFFFFF;
+    --text-cyan-light: #CCFFFF;
+
+    /* TankMan CSS variable API (mapped to existing theme values to avoid regressions) */
+    --tmc-bg: var(--deep-navy);
+    --tmc-panel: rgba(13, 27, 46, 0.7);
+    --tmc-accent: var(--neon-magenta);
+    --tmc-neon: var(--neon-cyan);
+    --tmc-glow: var(--purple-glow);
+    --tmc-muted: var(--dark-blue);
+    --tmc-gap: 16px;
+    --tmc-radius: 6px;
+    --tmc-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+    --tmc-font-stack: 'Rajdhani', sans-serif;
+    --tmc-grid: 8;
+    --tmc-gutter: 24px;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: var(--deep-navy);
+    color: var(--text-white);
+    min-height: 100vh;
+    background-image: 
+        linear-gradient(rgba(26, 11, 46, 0.4), rgba(10, 14, 26, 0.9)),
+        url('https://im.runware.ai/image/ws/2/ii/1703a6fc-3eea-44a4-be76-dbf27834ddec.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.6;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--neon-cyan);
+    color: var(--deep-navy);
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Header & Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(10, 14, 26, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid var(--neon-cyan);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.main-nav {
+    padding: 0;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo-section {
+    flex-shrink: 0;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-svg {
+    filter: drop-shadow(0 0 8px var(--neon-cyan));
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-neon {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--neon-cyan);
+    text-transform: uppercase;
+    text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.logo-command {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--neon-magenta);
+    text-transform: uppercase;
+    text-shadow: 0 0 10px var(--neon-magenta);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+}
+
+.nav-item svg {
+    color: var(--neon-cyan);
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 4px var(--neon-cyan));
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px var(--neon-cyan);
+}
+
+.nav-item:hover svg,
+.nav-item.active svg {
+    filter: drop-shadow(0 0 12px var(--neon-cyan));
+    transform: translateY(-2px);
+}
+
+.btn-login {
+    background: transparent;
+    border: 2px solid var(--neon-cyan);
+    color: var(--neon-cyan);
+    padding: 12px 32px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+.btn-login:hover {
+    background: var(--neon-cyan);
+    color: var(--deep-navy);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+}
+
+.page-title-bar {
+    background: linear-gradient(90deg, rgba(0, 240, 255, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%);
+    border-top: 1px solid var(--neon-cyan);
+    padding: 16px 40px;
+    clip-path: polygon(
+        0 0,
+        calc(100% - 40px) 0,
+        100% 100%,
+        40px 100%
+    );
+}
+
+.page-title {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--neon-cyan);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+/* Main Content Layout */
+main {
+    margin-top: 160px;
+    padding: 40px 20px;
+    min-height: calc(100vh - 160px);
+}
+
+.briefing-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 140px 1fr 280px;
+    gap: 24px;
+    align-items: start;
+}
+
+/* Left Sidebar Navigation */
+.sidebar-left {
+    position: sticky;
+    top: 180px;
+}
+
+.mission-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mission-nav-item {
+    background: rgba(13, 27, 46, 0.6);
+    border: 2px solid var(--neon-cyan);
+    color: var(--text-white);
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.mission-nav-item svg {
+    color: var(--neon-cyan);
+    filter: drop-shadow(0 0 6px var(--neon-cyan));
+    transition: all 0.3s ease;
+}
+
+.mission-nav-item:hover,
+.mission-nav-item.active {
+    background: rgba(0, 240, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px var(--neon-cyan);
+}
+
+.mission-nav-item:hover svg,
+.mission-nav-item.active svg {
+    filter: drop-shadow(0 0 12px var(--neon-cyan));
+    transform: scale(1.1);
+}
+
+/* Mission Content */
+.mission-content {
+    position: relative;
+}
+
+.mission-card {
+    background: rgba(13, 27, 46, 0.7);
+    border: 2px solid var(--neon-cyan);
+    padding: 32px;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.3);
+    position: relative;
+}
+
+.mission-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
+    box-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.mission-header {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.mission-header-decoration {
+    margin-bottom: 8px;
+}
+
+.mission-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.mission-title-label {
+    display: inline-block;
+    font-size: 24px;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 10px var(--neon-cyan);
+    margin-right: 12px;
+}
+
+.mission-title-name {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--neon-cyan) 0%, var(--neon-magenta) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 15px var(--neon-magenta));
+}
+
+.mission-title-accent {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--neon-magenta);
+    border-left: none;
+    border-bottom: none;
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+    box-shadow: 0 0 10px var(--neon-magenta);
+}
+
+.mission-description {
+    margin-bottom: 24px;
+    padding: 16px 0;
+    border-left: 3px solid var(--neon-cyan);
+    padding-left: 20px;
+}
+
+.mission-description p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-cyan-light);
+    text-shadow: 0 0 4px rgba(0, 240, 255, 0.3);
+}
+
+.mission-map-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: 640px;
+    margin: 0 auto 24px;
+    border: 3px solid var(--neon-cyan);
+    box-shadow: 
+        inset 0 0 30px rgba(0, 240, 255, 0.2),
+        0 0 30px rgba(0, 240, 255, 0.4);
+    overflow: hidden;
+}
+
+.mission-map-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7) saturate(1.2) hue-rotate(-10deg);
+}
+
+.mission-map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.map-grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(0deg, transparent 24%, rgba(0, 240, 255, 0.05) 25%, rgba(0, 240, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 240, 255, 0.05) 75%, rgba(0, 240, 255, 0.05) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, rgba(0, 240, 255, 0.05) 25%, rgba(0, 240, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 240, 255, 0.05) 75%, rgba(0, 240, 255, 0.05) 76%, transparent 77%, transparent);
+    background-size: 40px 40px;
+    pointer-events: none;
+}
+
+.tech-readout {
+    padding: 12px 16px;
+    background: rgba(0, 240, 255, 0.05);
+    border-left: 3px solid var(--neon-cyan);
+    border-right: 3px solid var(--neon-cyan);
+}
+
+.readout-text {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--neon-cyan);
+    opacity: 0.7;
+}
+
+/* Right Sidebar Parameters */
+.sidebar-right {
+    position: sticky;
+    top: 180px;
+}
+
+.mission-params {
+    background: rgba(13, 27, 46, 0.7);
+    border: 2px solid var(--neon-cyan);
+    padding: 24px;
+    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.param-card {
+    background: rgba(10, 14, 26, 0.6);
+    border: 1px solid var(--neon-cyan);
+    padding: 16px;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+    box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.1);
+}
+
+.param-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--neon-cyan);
+    margin-bottom: 6px;
+    text-shadow: 0 0 6px var(--neon-cyan);
+}
+
+.param-value {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-white);
+    letter-spacing: 0.5px;
+}
+
+.btn-launch {
+    margin-top: 16px;
+    background: var(--neon-magenta);
+    border: 2px solid var(--neon-cyan);
+    color: var(--text-white);
+    padding: 20px 40px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 0 20px rgba(255, 0, 255, 0.6),
+        0 0 40px rgba(0, 240, 255, 0.3);
+    text-shadow: 0 0 10px var(--text-white);
+}
+
+.btn-launch:hover {
+    background: var(--hot-pink);
+    transform: translateY(-2px);
+    box-shadow: 
+        0 0 30px rgba(255, 0, 255, 0.8),
+        0 0 60px rgba(0, 240, 255, 0.5);
+}
+
+.btn-launch.launching {
+    animation: pulse-launch 0.8s ease-in-out;
+}
+
+@keyframes pulse-launch {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.tech-decoration {
+    margin-top: 24px;
+    opacity: 0.6;
+}
+
+/* Footer */
+.site-footer {
+    background: rgba(10, 14, 26, 0.95);
+    border-top: 2px solid var(--neon-cyan);
+    padding: 40px 20px 24px;
+    margin-top: 80px;
+    box-shadow: 0 -5px 20px rgba(0, 240, 255, 0.2);
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.footer-logo .logo-neon {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--neon-cyan);
+    text-transform: uppercase;
+    text-shadow: 0 0 8px var(--neon-cyan);
+}
+
+.footer-logo .logo-command {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--neon-magenta);
+    text-transform: uppercase;
+    text-shadow: 0 0 8px var(--neon-magenta);
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: var(--text-cyan-light);
+    opacity: 0.8;
+}
+
+.footer-links h3 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--neon-cyan);
+    margin-bottom: 12px;
+    text-shadow: 0 0 6px var(--neon-cyan);
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: var(--text-cyan-light);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 6px var(--neon-cyan);
+    padding-left: 4px;
+}
+
+.footer-legal {
+    font-size: 12px;
+    color: var(--text-cyan-light);
+    opacity: 0.6;
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .briefing-container {
+        grid-template-columns: 120px 1fr 240px;
+        gap: 16px;
+    }
+    
+    .mission-nav-item {
+        font-size: 10px;
+        padding: 12px 8px;
+    }
+    
+    .mission-nav-item svg {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 968px) {
+    .nav-container {
+        flex-wrap: wrap;
+        padding: 16px 20px;
+    }
+    
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 16px;
+    }
+    
+    .nav-item span {
+        display: none;
+    }
+    
+    .briefing-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .sidebar-left,
+    .sidebar-right {
+        position: static;
+    }
+    
+    .mission-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .mission-nav-item {
+        flex: 0 0 auto;
+        min-width: 80px;
+    }
+    
+    .mission-params {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        margin-top: 200px;
+        padding: 24px 12px;
+    }
+    
+    .mission-card {
+        padding: 20px;
+    }
+    
+    .mission-title {
+        font-size: 32px;
+    }
+    
+    .mission-title-label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 4px;
+    }
+    
+    .mission-description p {
+        font-size: 13px;
+    }
+    
+    .btn-launch {
+        padding: 16px 32px;
+        font-size: 16px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    header,
+    .sidebar-left,
+    .sidebar-right,
+    footer {
+        display: none;
+    }
+    
+    main {
+        margin-top: 0;
+    }
+    
+    .mission-card {
+        border: 2px solid #000;
+        box-shadow: none;
+    }
+}
+
+/* Toast styles (minimal) */
+#tmc-toast-container {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 2000;
+}
+
+.tmc-toast {
+    background: rgba(10,14,26,0.95);
+    color: var(--text-white);
+    padding: 12px 16px;
+    border: 1px solid var(--neon-cyan);
+    box-shadow: 0 0 12px rgba(0,240,255,0.2);
+    border-radius: 6px;
+    font-weight: 600;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.tmc-toast-hide {
+    opacity: 0;
+    transform: translateY(8px);
+}
+</style>
+</html>
