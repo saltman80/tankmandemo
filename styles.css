@@ -2464,34 +2464,31 @@ body.gameplay-page main {
 /* Battlefield View */
 .battlefield-view {
   position: absolute;
-  inset: 0 0 20px 0;
+  inset: 0;
   z-index: 1;
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
   justify-content: center;
   overflow: hidden;
-  padding-bottom: 80px;
 }
 
 .battlefield-bg {
-  width: auto;
+  width: 100%;
   height: 100%;
-  max-width: min(70vw, 1180px);
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
-  filter: brightness(0.8) saturate(1.3);
+  filter: brightness(0.78) saturate(1.3);
 }
 
 @media (min-width: 1200px) {
   .battlefield-bg {
-    max-width: min(60vw, 1260px);
+    object-position: center;
   }
 }
 
 @media (max-width: 900px) {
   .battlefield-bg {
-    max-width: 92vw;
-    height: 85vh;
+    height: 100%;
   }
 }
 
@@ -2499,15 +2496,24 @@ body.gameplay-page main {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  z-index: 3;
 }
 
 .battlefield-grid {
   position: absolute;
   inset: 0;
+  z-index: 2;
   background-image: 
     linear-gradient(0deg, transparent 24%, rgba(0, 240, 255, 0.03) 25%, rgba(0, 240, 255, 0.03) 26%, transparent 27%, transparent 74%, rgba(0, 240, 255, 0.03) 75%, rgba(0, 240, 255, 0.03) 76%, transparent 77%, transparent),
     linear-gradient(90deg, transparent 24%, rgba(0, 240, 255, 0.03) 25%, rgba(0, 240, 255, 0.03) 26%, transparent 27%, transparent 74%, rgba(0, 240, 255, 0.03) 75%, rgba(0, 240, 255, 0.03) 76%, transparent 77%, transparent);
   background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.tmc-hud {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
   pointer-events: none;
 }
 
