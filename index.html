@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NeonFront Command - Command the future of warfare with AI-powered tank battles in a neon-drenched digital realm.">
-    <title>NeonFront Command - Home</title>
+    <meta name="description" content="TankMan - Command the future of warfare with AI-powered tank battles in a neon-drenched digital realm.">
+    <title>TankMan - Home</title>
     <link rel="canonical" href="https://neonfrontcommand.com/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
         <nav class="main-nav" role="navigation" aria-label="Main navigation">
             <div class="nav-container">
                 <div class="logo-section">
-                    <a href="index.html" class="logo-link" aria-label="NeonFront Command Home">
+                    <a href="index.html" class="logo-link" aria-label="TankMan Home">
                         <svg class="logo-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 28L16 4L28 28H4Z" stroke="url(#cyan-magenta)" stroke-width="2" fill="none"/>
                             <path d="M16 12V24" stroke="url(#cyan-magenta)" stroke-width="2"/>
@@ -30,8 +30,7 @@
                             </defs>
                         </svg>
                         <span class="logo-text">
-                            <span class="logo-neon">NEONFRONT</span>
-                            <span class="logo-command">COMMAND</span>
+                            <span class="logo-neon">TankMan</span>
                         </span>
                     </a>
                 </div>
@@ -148,23 +147,27 @@
             </div>
             
             <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="title-line-1">COMMAND THE</span>
-                    <span class="title-line-2">FUTURE OF WARFARE</span>
-                </h1>
+                <div class="hero-content-top">
+                    <h1 class="hero-title">
+                        <span class="title-line-1">COMMAND THE</span>
+                        <span class="title-line-2">FUTURE OF WARFARE</span>
+                    </h1>
+                </div>
                 
-                <p class="hero-description">
-                    Experience AI-powered tank battles in a<br>
-                    neon-drenched digital realm. Join the fight.
-                </p>
-                
-                <button class="btn-cta" aria-label="Start playing now">
-                    <span class="btn-glow"></span>
-                    <span class="btn-text">PLAY NOW</span>
-                    <svg class="btn-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
+                <div class="hero-content-bottom">
+                    <p class="hero-description">
+                        Experience AI-powered tank battles in a<br>
+                        neon-drenched digital realm. Join the fight.
+                    </p>
+                    
+                    <button class="btn-cta" aria-label="Start playing now">
+                        <span class="btn-glow"></span>
+                        <span class="btn-text">PLAY NOW</span>
+                        <svg class="btn-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
                 
                 <!-- Tech readout decorations -->
                 <div class="tech-readout tech-readout-left">
@@ -610,14 +613,23 @@ header {
     z-index: 10;
     text-align: center;
     max-width: 1200px;
-    padding: 40px;
+    padding: 140px 40px 120px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content-top {
+    transform: translateY(-80px);
 }
 
 .hero-title {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-bottom: 32px;
+    margin-bottom: 0;
 }
 
 .title-line-1 {
@@ -678,8 +690,15 @@ header {
     font-weight: 400;
     color: var(--text-cyan-light);
     line-height: 1.8;
-    margin-bottom: 48px;
+    margin-bottom: 0;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 }
 
 .btn-cta {
@@ -754,13 +773,13 @@ header {
 }
 
 .tech-readout-left {
-    bottom: 120px;
+    bottom: 40px;
     left: 40px;
     clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
 }
 
 .tech-readout-right {
-    bottom: 120px;
+    bottom: 40px;
     right: 40px;
     clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%, 0 12px);
 }
@@ -869,6 +888,18 @@ header {
     .hero-description {
         font-size: 16px;
     }
+
+    .hero-content {
+        padding: 120px 24px 100px;
+    }
+
+    .hero-content-top {
+        transform: translateY(-40px);
+    }
+
+    .hero-content-bottom {
+        gap: 24px;
+    }
     
     .btn-cta {
         padding: 16px 40px;
@@ -904,7 +935,7 @@ header {
     }
     
     .hero-content {
-        padding: 20px;
+        padding: 110px 20px 90px;
     }
     
     .title-line-1 {
