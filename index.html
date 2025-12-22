@@ -1,0 +1,905 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NeonFront Command - Command the future of warfare with AI-powered tank battles in a neon-drenched digital realm.">
+    <title>NeonFront Command - Home</title>
+    <link rel="canonical" href="https://neonfrontcommand.com/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <a href="index.html" class="logo-link" aria-label="NeonFront Command Home">
+                        <svg class="logo-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 28L16 4L28 28H4Z" stroke="url(#cyan-magenta)" stroke-width="2" fill="none"/>
+                            <path d="M16 12V24" stroke="url(#cyan-magenta)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="cyan-magenta" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#00F0FF;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FF00FF;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">
+                            <span class="logo-neon">NEONFRONT</span>
+                            <span class="logo-command">COMMAND</span>
+                        </span>
+                    </a>
+                </div>
+                
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html" class="nav-item active">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2L2 8V18H7V13H13V18H18V8L10 2Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                            <span>HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gameplay.html" class="nav-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="7" width="14" height="8" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <circle cx="7" cy="11" r="1.5" fill="currentColor"/>
+                                <circle cx="13" cy="11" r="1.5" fill="currentColor"/>
+                            </svg>
+                            <span>GAMEPLAY</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="garage.html" class="nav-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 10L10 4L16 10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M4 10H16V16H4V10Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                            <span>UNITS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="nav-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2L4 6V12C4 15.5 7 18.5 10 20C13 18.5 16 15.5 16 12V6L10 2Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                            <span>LORE</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html" class="nav-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                            <span>COMMUNITY</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <button class="btn-login" aria-label="Login to your account">LOGIN</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="main-content" role="main">
+        <section class="hero-section" aria-label="Hero">
+            <div class="hero-background">
+                <img src="https://im.runware.ai/image/ws/2/ii/1703a6fc-3eaa-44a4-be76-dbf27834ddec.jpg" alt="Futuristic tank on neon grid battlefield" class="hero-image">
+                <div class="hero-overlay"></div>
+                <div class="grid-overlay"></div>
+                
+                <!-- Decorative corner frames -->
+                <svg class="corner-frame corner-tl" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 40L0 0L40 0" stroke="url(#corner-gradient)" stroke-width="2"/>
+                    <path d="M0 20L20 20L20 0" stroke="url(#corner-gradient)" stroke-width="1" opacity="0.5"/>
+                    <circle cx="50" cy="10" r="2" fill="#00F0FF"/>
+                    <defs>
+                        <linearGradient id="corner-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00F0FF;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#FF00FF;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                
+                <svg class="corner-frame corner-tr" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M200 40L200 0L160 0" stroke="url(#corner-gradient-2)" stroke-width="2"/>
+                    <path d="M200 20L180 20L180 0" stroke="url(#corner-gradient-2)" stroke-width="1" opacity="0.5"/>
+                    <circle cx="150" cy="10" r="2" fill="#FF00FF"/>
+                    <defs>
+                        <linearGradient id="corner-gradient-2" x1="100%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00F0FF;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                
+                <svg class="corner-frame corner-bl" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 160L0 200L40 200" stroke="url(#corner-gradient-3)" stroke-width="2"/>
+                    <path d="M0 180L20 180L20 200" stroke="url(#corner-gradient-3)" stroke-width="1" opacity="0.5"/>
+                    <circle cx="50" cy="190" r="2" fill="#00F0FF"/>
+                    <defs>
+                        <linearGradient id="corner-gradient-3" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#00F0FF;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#FF00FF;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                
+                <svg class="corner-frame corner-br" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M200 160L200 200L160 200" stroke="url(#corner-gradient-4)" stroke-width="2"/>
+                    <path d="M200 180L180 180L180 200" stroke="url(#corner-gradient-4)" stroke-width="1" opacity="0.5"/>
+                    <circle cx="150" cy="190" r="2" fill="#FF00FF"/>
+                    <defs>
+                        <linearGradient id="corner-gradient-4" x1="100%" y1="100%" x2="0%" y2="0%">
+                            <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00F0FF;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line-1">COMMAND THE</span>
+                    <span class="title-line-2">FUTURE OF WARFARE</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Experience AI-powered tank battles in a<br>
+                    neon-drenched digital realm. Join the fight.
+                </p>
+                
+                <button class="btn-cta" aria-label="Start playing now">
+                    <span class="btn-glow"></span>
+                    <span class="btn-text">PLAY NOW</span>
+                    <svg class="btn-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                
+                <!-- Tech readout decorations -->
+                <div class="tech-readout tech-readout-left">
+                    <div class="readout-line">
+                        <span class="readout-label">SYSTEM STATUS</span>
+                        <span class="readout-value">ONLINE</span>
+                    </div>
+                    <div class="readout-line">
+                        <span class="readout-label">ACTIVE UNITS</span>
+                        <span class="readout-value">2,847</span>
+                    </div>
+                    <div class="readout-line">
+                        <span class="readout-label">BATTLES ACTIVE</span>
+                        <span class="readout-value">156</span>
+                    </div>
+                </div>
+                
+                <div class="tech-readout tech-readout-right">
+                    <div class="readout-line">
+                        <span class="readout-label">POWER LEVEL</span>
+                        <span class="readout-value">98.6%</span>
+                    </div>
+                    <div class="readout-line">
+                        <span class="readout-label">CONNECTION</span>
+                        <span class="readout-value">SECURE</span>
+                    </div>
+                    <div class="readout-line">
+                        <span class="readout-label">READY STATE</span>
+                        <span class="readout-value">GO</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scan line effect -->
+            <div class="scan-line"></div>
+        </section>
+    </main>
+    
+    <script>
+        // Navigation scroll effect
+        let lastScrollY = window.scrollY;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            lastScrollY = window.scrollY;
+        });
+        
+        // CTA button interaction
+        const ctaBtn = document.querySelector('.btn-cta');
+        
+        if (ctaBtn) {
+            ctaBtn.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+            
+            ctaBtn.addEventListener('mouseenter', function() {
+                this.querySelector('.btn-glow').style.opacity = '1';
+            });
+            
+            ctaBtn.addEventListener('mouseleave', function() {
+                this.querySelector('.btn-glow').style.opacity = '0.5';
+            });
+        }
+        
+        // Parallax effect for hero image
+        window.addEventListener('scroll', () => {
+            const heroImage = document.querySelector('.hero-image');
+            if (heroImage) {
+                const scrolled = window.scrollY;
+                heroImage.style.transform = `translateY(${scrolled * 0.5}px) scale(1.1)`;
+            }
+        });
+        
+        // Animate tech readouts on load
+        window.addEventListener('load', () => {
+            const readoutValues = document.querySelectorAll('.readout-value');
+            readoutValues.forEach((value, index) => {
+                value.style.opacity = '0';
+                value.style.transform = 'translateX(20px)';
+                
+                setTimeout(() => {
+                    value.style.transition = 'all 0.5s ease';
+                    value.style.opacity = '1';
+                    value.style.transform = 'translateX(0)';
+                }, 500 + (index * 100));
+            });
+        });
+        
+        // Login button interaction
+        const loginBtn = document.querySelector('.btn-login');
+        
+        if (loginBtn) {
+            loginBtn.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        }
+        
+        // Keyboard navigation enhancement
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.activeElement.blur();
+            }
+        });
+        
+        // Add pulsing effect to decorative elements
+        setInterval(() => {
+            const circles = document.querySelectorAll('.corner-frame circle');
+            circles.forEach(circle => {
+                circle.style.animation = 'pulse 1s ease';
+                setTimeout(() => {
+                    circle.style.animation = '';
+                }, 1000);
+            });
+        }, 3000);
+    </script>
+</body>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --neon-cyan: #00F0FF;
+    --neon-magenta: #FF00FF;
+    --hot-pink: #FF0099;
+    --deep-navy: #0A0E1A;
+    --dark-blue: #0D1B2E;
+    --rich-purple: #1A0B2E;
+    --bright-cyan: #00FFFF;
+    --purple-glow: #AA00FF;
+    --text-white: #FFFFFF;
+    --text-cyan-light: #CCFFFF;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: var(--deep-navy);
+    color: var(--text-white);
+    min-height: 100vh;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--neon-cyan);
+    color: var(--deep-navy);
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Header & Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(10, 14, 26, 0.95);
+    backdrop-filter: blur(12px);
+    transition: transform 0.3s ease;
+}
+
+.main-nav {
+    border-bottom: 2px solid var(--neon-cyan);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4), 0 4px 20px rgba(0, 0, 0, 0.5);
+    clip-path: polygon(
+        0 0,
+        calc(100% - 40px) 0,
+        100% 40px,
+        100% 100%,
+        0 100%
+    );
+}
+
+.nav-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo-section {
+    flex-shrink: 0;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-svg {
+    filter: drop-shadow(0 0 10px var(--neon-cyan));
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-neon {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--neon-cyan) 0%, var(--neon-magenta) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    filter: drop-shadow(0 0 10px var(--neon-cyan));
+}
+
+.logo-command {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-cyan-light);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    padding: 8px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-item svg {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    filter: drop-shadow(0 0 4px currentColor);
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
+    box-shadow: 0 0 10px var(--neon-cyan);
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.nav-item:hover svg,
+.nav-item.active svg {
+    opacity: 1;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+    width: 100%;
+}
+
+.btn-login {
+    background: transparent;
+    border: 2px solid var(--neon-cyan);
+    color: var(--neon-cyan);
+    padding: 12px 32px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-login::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-magenta));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn-login:hover {
+    color: var(--deep-navy);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.8);
+    transform: translateY(-2px);
+}
+
+.btn-login:hover::before {
+    opacity: 1;
+}
+
+.btn-login span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.1);
+    filter: brightness(0.7) saturate(1.3);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse at center,
+        transparent 0%,
+        rgba(10, 14, 26, 0.4) 50%,
+        rgba(10, 14, 26, 0.8) 100%
+    );
+}
+
+.grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}
+
+.corner-frame {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.corner-tl {
+    top: 80px;
+    left: 0;
+}
+
+.corner-tr {
+    top: 80px;
+    right: 0;
+}
+
+.corner-bl {
+    bottom: 0;
+    left: 0;
+}
+
+.corner-br {
+    bottom: 0;
+    right: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 1200px;
+    padding: 40px;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.title-line-1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--neon-cyan);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-shadow: 
+        0 0 20px var(--neon-cyan),
+        0 0 40px var(--neon-cyan),
+        0 0 60px rgba(0, 240, 255, 0.5);
+    animation: glow-pulse 3s ease-in-out infinite;
+}
+
+.title-line-2 {
+    font-size: 72px;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--neon-magenta) 0%, var(--hot-pink) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-shadow: 
+        0 0 20px var(--neon-magenta),
+        0 0 40px var(--neon-magenta);
+    filter: drop-shadow(0 0 30px rgba(255, 0, 255, 0.6));
+    animation: glow-pulse-alt 3s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        text-shadow: 
+            0 0 20px var(--neon-cyan),
+            0 0 40px var(--neon-cyan),
+            0 0 60px rgba(0, 240, 255, 0.5);
+    }
+    50% {
+        text-shadow: 
+            0 0 30px var(--neon-cyan),
+            0 0 60px var(--neon-cyan),
+            0 0 90px rgba(0, 240, 255, 0.7);
+    }
+}
+
+@keyframes glow-pulse-alt {
+    0%, 100% {
+        filter: drop-shadow(0 0 30px rgba(255, 0, 255, 0.6));
+    }
+    50% {
+        filter: drop-shadow(0 0 50px rgba(255, 0, 255, 0.9));
+    }
+}
+
+.hero-description {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-cyan-light);
+    line-height: 1.8;
+    margin-bottom: 48px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-cta {
+    background: linear-gradient(135deg, var(--neon-magenta) 0%, var(--hot-pink) 100%);
+    border: 3px solid var(--neon-cyan);
+    color: var(--text-white);
+    padding: 20px 60px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 0 30px rgba(255, 0, 255, 0.6),
+        0 0 50px rgba(0, 240, 255, 0.4);
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-glow {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-magenta));
+    opacity: 0.5;
+    filter: blur(20px);
+    transition: opacity 0.3s ease;
+}
+
+.btn-text {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-arrow {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.btn-cta:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+        0 0 50px rgba(255, 0, 255, 0.9),
+        0 0 80px rgba(0, 240, 255, 0.6),
+        0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.btn-cta:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+.btn-cta:active {
+    transform: translateY(-2px);
+}
+
+/* Tech Readouts */
+.tech-readout {
+    position: absolute;
+    z-index: 5;
+    background: rgba(10, 14, 26, 0.8);
+    border: 1px solid var(--neon-cyan);
+    padding: 16px;
+    min-width: 200px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.tech-readout-left {
+    bottom: 120px;
+    left: 40px;
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+
+.tech-readout-right {
+    bottom: 120px;
+    right: 40px;
+    clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%, 0 12px);
+}
+
+.readout-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.readout-line:last-child {
+    margin-bottom: 0;
+}
+
+.readout-label {
+    color: var(--text-cyan-light);
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.readout-value {
+    color: var(--neon-cyan);
+    font-weight: 700;
+    text-shadow: 0 0 8px var(--neon-cyan);
+}
+
+/* Scan Line Effect */
+.scan-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent 0%,
+        var(--neon-cyan) 50%,
+        transparent 100%
+    );
+    box-shadow: 0 0 20px var(--neon-cyan);
+    animation: scan 4s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes scan {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.2);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .title-line-1 {
+        font-size: 48px;
+    }
+    
+    .title-line-2 {
+        font-size: 56px;
+    }
+    
+    .tech-readout {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 20px;
+    }
+    
+    .nav-item span {
+        font-size: 11px;
+    }
+    
+    .nav-item svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .title-line-1 {
+        font-size: 32px;
+        letter-spacing: 4px;
+    }
+    
+    .title-line-2 {
+        font-size: 36px;
+        letter-spacing: 4px;
+    }
+    
+    .hero-description {
+        font-size: 16px;
+    }
+    
+    .btn-cta {
+        padding: 16px 40px;
+        font-size: 16px;
+    }
+    
+    .corner-frame {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 16px 20px;
+    }
+    
+    .logo-neon {
+        font-size: 18px;
+    }
+    
+    .nav-links {
+        gap: 12px;
+    }
+    
+    .nav-item span {
+        display: none;
+    }
+    
+    .btn-login {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    
+    .hero-content {
+        padding: 20px;
+    }
+    
+    .title-line-1 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    
+    .title-line-2 {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+}
+</style>
+</html>
+```
