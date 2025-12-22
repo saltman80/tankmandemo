@@ -311,6 +311,10 @@ section.hero {
   justify-content: center;
 }
 
+.hero-section .hero-title {
+  margin-top: 30px;
+}
+
 /* Grid System */
 .grid {
   display: grid;
