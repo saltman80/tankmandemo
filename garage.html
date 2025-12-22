@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NeonFront Command - Garage. Manage, upgrade, and customize your tank fleet with advanced AI-powered modifications.">
+    <title>Garage - NeonFront Command</title>
+    <link rel="canonical" href="https://neonfrontcommand.com/garage.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
+        <nav class="main-nav tmc-nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <div class="tmc-logo">
+                        <a href="index.html" class="logo-link" aria-label="NeonFront Command Home">
+                            <svg class="logo-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 28L16 4L28 28H4Z" stroke="url(#cyan-magenta)" stroke-width="2" fill="none"/>
+                                <path d="M16 12V24" stroke="url(#cyan-magenta)" stroke-width="2"/>
+                                <defs>
+                                    <linearGradient id="cyan-magenta" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#00F0FF;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#FF00FF;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span class="logo-text">
+                                <span class="logo-neon">TANKMAN</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html" class="nav-item tmc-link" data-route="index.html" data-tmc-id="nav-index">
+                            <span>HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="briefing.html" class="nav-item tmc-link" data-route="briefing.html" data-tmc-id="nav-briefing">
+                            <span>BRIEFING</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="garage.html" class="nav-item tmc-link is-active" data-route="garage.html" aria-current="page" data-tmc-id="nav-garage">
+                            <span>GARAGE</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gameplay.html" class="nav-item tmc-link" data-route="gameplay.html" data-tmc-id="nav-gameplay">
+                            <span>GAMEPLAY</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="results.html" class="nav-item tmc-link" data-route="results.html" data-tmc-id="nav-results">
+                            <span>RESULTS</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <button class="btn-login" aria-label="Login to your account" data-tmc-id="btn-login">LOGIN</button>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="breadcrumb-bar">
+            <div class="breadcrumb-container">
+                <a href="index.html" class="breadcrumb-link">HOME</a>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="breadcrumb-current">GARAGE</span>
+            </div>
+        </div>
+    </header>
+    
+    <main id="main-content" role="main">
+        <div class="garage-container">
+            <!-- Left Section: Tank Display Grid -->
+            <section class="tank-display-section" aria-label="Tank inventory">
+                <h1 class="garage-title">COMMAND TANK GARAGE</h1>
+                
+                <div class="tank-grid garage-tank-list">
+                    <!-- Tank Card 1 -->
+                    <article class="tank-card active" data-tank-id="1" data-tmc-id="tank-1" role="button" tabindex="0" aria-pressed="true">
+                        <div class="tank-showcase">
+                            <div class="tank-frame">
+                                <svg class="frame-border" viewBox="0 0 460 284" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                    <path d="M20 0 L440 0 L460 20 L460 264 L440 284 L20 284 L0 264 L0 20 Z" stroke="url(#frame-gradient-1)" stroke-width="2" fill="none"/>
+                                    <defs>
+                                        <linearGradient id="frame-gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:1" />
+                                            <stop offset="50%" style="stop-color:#00F0FF;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#FF00FF;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <img src="https://im.runware.ai/image/ws/2/ii/a620b286-174f-4348-8ee7-61b202904207.jpg" alt="Tank-I tactical combat vehicle" class="tank-image">
+                                <div class="tank-glow"></div>
+                            </div>
+                        </div>
+                        <div class="tank-info">
+                            <h2 class="tank-name">TANK -I</h2>
+                            <div class="tank-stats">
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="6" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                                        <circle cx="8" cy="8" r="2" fill="#00F0FF"/>
+                                    </svg>
+                                    <span class="stat-value">3.00</span>
+                                </div>
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 8 L8 2 L14 8 M8 14 L8 4" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                                    </svg>
+                                    <span class="stat-value">3.50</span>
+                                </div>
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 10 L6 6 L10 10 L14 4" stroke="#FF0099" stroke-width="2" fill="none"/>
+                                        <circle cx="14" cy="4" r="2" fill="#FF0099"/>
+                                    </svg>
+                                    <span class="stat-value">4.75</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Tank Card 2 -->
+                    <article class="tank-card" data-tank-id="2" data-tmc-id="tank-2" role="button" tabindex="0" aria-pressed="false">
+                        <div class="tank-showcase">
+                            <div class="tank-frame">
+                                <svg class="frame-border" viewBox="0 0 460 284" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                    <path d="M20 0 L440 0 L460 20 L460 264 L440 284 L20 284 L0 264 L0 20 Z" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                                </svg>
+                                <img src="https://im.runware.ai/image/ws/2/ii/f1d6c71d-5332-46ac-9e30-124e7c4b8f3e.jpg" alt="Tank 2 tactical combat vehicle" class="tank-image">
+                                <div class="tank-glow"></div>
+                            </div>
+                        </div>
+                        <div class="tank-info">
+                            <h2 class="tank-name">TANK 2</h2>
+                            <div class="tank-stats">
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="6" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                                        <circle cx="8" cy="8" r="2" fill="#00F0FF"/>
+                                    </svg>
+                                    <span class="stat-value">3.00</span>
+                                </div>
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 8 L8 2 L14 8 M8 14 L8 4" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                                    </svg>
+                                    <span class="stat-value">3.50</span>
+                                </div>
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 10 L6 6 L10 10 L14 4" stroke="#FF0099" stroke-width="2" fill="none"/>
+                                        <circle cx="14" cy="4" r="2" fill="#FF0099"/>
+                                    </svg>
+                                    <span class="stat-value">4.75</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Tank Card 3 -->
+                    <article class="tank-card" data-tank-id="3" data-tmc-id="tank-3" role="button" tabindex="0" aria-pressed="false">
+                        <div class="tank-showcase">
+                            <div class="tank-frame">
+                                <svg class="frame-border" viewBox="0 0 460 284" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                    <path d="M20 0 L440 0 L460 20 L460 264 L440 284 L20 284 L0 264 L0 20 Z" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                                </svg>
+                                <img src="https://im.runware.ai/image/ws/2/ii/a620b286-174f-4348-8ee7-61b202904207.jpg" alt="Tannon 3 tactical combat vehicle" class="tank-image">
+                                <div class="tank-glow"></div>
+                            </div>
+                        </div>
+                        <div class="tank-info">
+                            <h2 class="tank-name">TANNON 3</h2>
+                            <div class="tank-stats">
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="6" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                                        <circle cx="8" cy="8" r="2" fill="#00F0FF"/>
+                                    </svg>
+                                    <span class="stat-value">8.00</span>
+                                </div>
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 8 L8 2 L14 8 M8 14 L8 4" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                                    </svg>
+                                    <span class="stat-value">3.50</span>
+                                </div>
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 10 L6 6 L10 10 L14 4" stroke="#FF0099" stroke-width="2" fill="none"/>
+                                        <circle cx="14" cy="4" r="2" fill="#FF0099"/>
+                                    </svg>
+                                    <span class="stat-value">6.75</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Tank Card 4 -->
+                    <article class="tank-card" data-tank-id="4" data-tmc-id="tank-4" role="button" tabindex="0" aria-pressed="false">
+                        <div class="tank-showcase">
+                            <div class="tank-frame">
+                                <svg class="frame-border" viewBox="0 0 460 284" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                    <path d="M20 0 L440 0 L460 20 L460 264 L440 284 L20 284 L0 264 L0 20 Z" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                                </svg>
+                                <img src="https://im.runware.ai/image/ws/2/ii/f1d6c71d-5332-46ac-9e30-124e7c4b8f3e.jpg" alt="Shields 2 tactical combat vehicle" class="tank-image">
+                                <div class="tank-glow"></div>
+                            </div>
+                        </div>
+                        <div class="tank-info">
+                            <h2 class="tank-name">SHIELDS 2</h2>
+                            <div class="tank-stats">
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="6" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                                        <circle cx="8" cy="8" r="2" fill="#00F0FF"/>
+                                    </svg>
+                                    <span class="stat-value">9.30</span>
+                                </div>
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 8 L8 2 L14 8 M8 14 L8 4" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                                    </svg>
+                                    <span class="stat-value">3.00</span>
+                                </div>
+                                <div class="stat-item">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 10 L6 6 L10 10 L14 4" stroke="#FF0099" stroke-width="2" fill="none"/>
+                                        <circle cx="14" cy="4" r="2" fill="#FF0099"/>
+                                    </svg>
+                                    <span class="stat-value">5.75</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Right Section: Upgrade Panel -->
+            <aside class="upgrade-panel" role="complementary" aria-label="Tank upgrade interface" data-tmc-panel="garage-preview">
+                <div class="upgrade-header">
+                    <h2 class="upgrade-title">UPGRADE</h2>
+                </div>
+                
+                <!-- Armor Section -->
+                <section class="upgrade-section">
+                    <div class="section-header">
+                        <h3 class="section-title">ARMOR</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L4 6V12C4 16.5 7 20.5 12 22C17 20.5 20 16.5 20 12V6L12 2Z" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                            <path d="M12 8V12L15 15" stroke="#00F0FF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Armor</span>
+                        <span class="stat-number">150</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 75%; background: linear-gradient(90deg, #00F0FF 0%, #0088AA 100%);"></div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Durability</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 85%; background: linear-gradient(90deg, #00F0FF 0%, #0088AA 100%);"></div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Speed</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 60%; background: linear-gradient(90deg, #FF00FF 0%, #AA0088 100%);"></div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Firepower</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 70%; background: linear-gradient(90deg, #FF00FF 0%, #AA0088 100%);"></div>
+                    </div>
+                    
+                    <div class="modules-section">
+                        <h4 class="modules-label">MODULES</h4>
+                        <div class="modules-grid">
+                            <button class="module-slot active" aria-label="Armor module 1 equipped" data-tmc-id="module-armor-1">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 5L8 12V20C8 26 12 31 20 35C28 31 32 26 32 20V12L20 5Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-indicator">1</span>
+                            </button>
+                            <button class="module-slot" aria-label="Armor module 2 empty" data-tmc-id="module-armor-2">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="8" y="12" width="8" height="16" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <rect x="18" y="12" width="8" height="16" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <rect x="28" y="12" width="4" height="16" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-indicator">2</span>
+                            </button>
+                            <button class="module-slot" aria-label="Armor module 3 empty" data-tmc-id="module-armor-3">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                                    <line x1="20" y1="8" x2="20" y2="12" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="20" y1="28" x2="20" y2="32" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span class="module-indicator">3</span>
+                            </button>
+                            <button class="module-slot" aria-label="Armor module 4 empty" data-tmc-id="module-armor-4">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 15L20 8L28 15L25 28L15 28Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-indicator">4</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Engine Section -->
+                <section class="upgrade-section">
+                    <div class="section-header">
+                        <h3 class="section-title">ENGINE</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="8" width="12" height="10" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                            <rect x="10" y="5" width="4" height="3" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                            <circle cx="10" cy="13" r="2" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                            <circle cx="14" cy="13" r="2" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Durability</span>
+                        <span class="stat-number">60</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 60%; background: linear-gradient(90deg, #00F0FF 0%, #0088AA 100%);"></div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Speed</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 80%; background: linear-gradient(90deg, #00F0FF 0%, #0088AA 100%);"></div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Firepower</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 75%; background: linear-gradient(90deg, #FF00FF 0%, #AA0088 100%);"></div>
+                    </div>
+                    
+                    <div class="modules-section">
+                        <h4 class="modules-label">MODULES</h4>
+                        <div class="modules-grid">
+                            <button class="module-slot active" aria-label="Engine module 1 equipped" data-tmc-id="module-engine-1">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="10" y="14" width="20" height="12" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <rect x="16" y="10" width="8" height="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-checkmark">?</span>
+                            </button>
+                            <button class="module-slot" aria-label="Engine module 2 empty" data-tmc-id="module-engine-2">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <path d="M16 20L19 23L24 17" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-indicator">2</span>
+                            </button>
+                            <button class="module-slot" aria-label="Engine module 3 empty" data-tmc-id="module-engine-3">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 20L20 15L25 20L20 25Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <circle cx="20" cy="20" r="2" fill="currentColor"/>
+                                </svg>
+                                <span class="module-indicator">3</span>
+                            </button>
+                            <button class="module-slot" aria-label="Engine module 4 empty" data-tmc-id="module-engine-4">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <circle cx="20" cy="20" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-indicator">4</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Cannon Section -->
+                <section class="upgrade-section">
+                    <div class="section-header">
+                        <h3 class="section-title">CANNON</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="10" width="16" height="4" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                            <rect x="18" y="8" width="4" height="8" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                            <circle cx="12" cy="12" r="2" fill="#FF00FF"/>
+                        </svg>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Durability</span>
+                        <span class="stat-number">90</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 90%; background: linear-gradient(90deg, #00F0FF 0%, #0088AA 100%);"></div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Firepower</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 85%; background: linear-gradient(90deg, #FF00FF 0%, #AA0088 100%);"></div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Speed</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 70%; background: linear-gradient(90deg, #FF00FF 0%, #AA0088 100%);"></div>
+                    </div>
+                    
+                    <div class="modules-section">
+                        <h4 class="modules-label">MODULES</h4>
+                        <div class="modules-grid">
+                            <button class="module-slot active" aria-label="Cannon module 1 equipped" data-tmc-id="module-cannon-1">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="8" y="16" width="24" height="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                                </svg>
+                                <span class="module-checkmark">?</span>
+                            </button>
+                            <button class="module-slot" aria-label="Cannon module 2 empty" data-tmc-id="module-cannon-2">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="12" y="12" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <path d="M16 20L19 23L24 17" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-indicator">2</span>
+                            </button>
+                            <button class="module-slot" aria-label="Cannon module 3 empty" data-tmc-id="module-cannon-3">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <path d="M15 20L20 15L25 20" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-indicator">3</span>
+                            </button>
+                            <button class="module-slot" aria-label="Cannon module 4 empty" data-tmc-id="module-cannon-4">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 10L28 20L20 30L12 20Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-indicator">4</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Shields Section -->
+                <section class="upgrade-section">
+                    <div class="section-header">
+                        <h3 class="section-title">SHIELDS</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L4 6V12C4 16.5 7 20.5 12 22C17 20.5 20 16.5 20 12V6L12 2Z" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Shield Strength</span>
+                        <span class="stat-number">90</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 90%; background: linear-gradient(90deg, #00F0FF 0%, #0088AA 100%);"></div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Speed</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 75%; background: linear-gradient(90deg, #FF00FF 0%, #AA0088 100%);"></div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Speed</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" style="width: 80%; background: linear-gradient(90deg, #FF00FF 0%, #AA0088 100%);"></div>
+                    </div>
+                    
+                    <div class="modules-section">
+                        <h4 class="modules-label">MODULES</h4>
+                        <div class="modules-grid">
+                            <button class="module-slot active" aria-label="Shield module 1 equipped" data-tmc-id="module-shield-1">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 8L12 12V20C12 24 15 28 20 30C25 28 28 24 28 20V12L20 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-checkmark">?</span>
+                            </button>
+                            <button class="module-slot" aria-label="Shield module 2 empty" data-tmc-id="module-shield-2">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <path d="M20 12V20L25 25" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span class="module-indicator">2</span>
+                            </button>
+                            <button class="module-slot" aria-label="Shield module 3 empty" data-tmc-id="module-shield-3">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 20L20 15L25 20L20 25Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-indicator">3</span>
+                            </button>
+                            <button class="module-slot" aria-label="Shield module 4 empty" data-tmc-id="module-shield-4">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="12" y="12" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <circle cx="20" cy="20" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span class="module-indicator">4</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Equip Button -->
+                <button class="btn-equip" aria-label="Equip selected upgrades" data-tmc-id="equip-btn">EQUIP UPGRADE</button>
+            </aside>
+        </div>
+        
+        <!-- Tank Carousel at Bottom -->
+        <nav class="tank-carousel-bottom" role="navigation" aria-label="Quick tank selection">
+            <button class="carousel-nav carousel-prev" aria-label="Previous tank" data-tmc-id="carousel-prev">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <div class="carousel-items">
+                <button class="carousel-tank" data-tank-id="1" data-tmc-id="carousel-tank-1" aria-label="Select Tank-I">
+                    <img src="https://im.runware.ai/image/ws/2/ii/a620b286-174f-4348-8ee7-61b202904207.jpg" alt="Tank-I" class="carousel-image">
+                </button>
+                <button class="carousel-tank" data-tank-id="2" data-tmc-id="carousel-tank-2" aria-label="Select Tank 2">
+                    <img src="https://im.runware.ai/image/ws/2/ii/f1d6c71d-5332-46ac-9e30-124e7c4b8f3e.jpg" alt="Tank 2" class="carousel-image">
+                </button>
+                <button class="carousel-tank" data-tank-id="3" data-tmc-id="carousel-tank-3" aria-label="Select Tannon 3">
+                    <img src="https://im.runware.ai/image/ws/2/ii/a620b286-174f-4348-8ee7-61b202904207.jpg" alt="Tannon 3" class="carousel-image">
+                </button>
+                <button class="carousel-tank" data-tank-id="4" data-tmc-id="carousel-tank-4" aria-label="Select Shields 2">
+                    <img src="https://im.runware.ai/image/ws/2/ii/f1d6c71d-5332-46ac-9e30-124e7c4b8f3e.jpg" alt="Shields 2" class="carousel-image">
+                </button>
+                <button class="carousel-tank" data-tank-id="5" data-tmc-id="carousel-tank-5" aria-label="Select Tank 5">
+                    <img src="https://im.runware.ai/image/ws/2/ii/a620b286-174f-4348-8ee7-61b202904207.jpg" alt="Tank 5" class="carousel-image">
+                </button>
+            </div>
+            
+            <button class="carousel-nav carousel-next" aria-label="Next tank" data-tmc-id="carousel-next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </nav>
+    </main>
+    
+    <script>
+        // Minimal TankManapp stub to avoid runtime errors if not provided by app.js
+        window.TankManapp = window.TankManapp || {
+            highlightNav: function () { /* no-op until app is loaded */ },
+            emit: function () { /* legacy shim */ }
+        };
+
+        // Wire up tmc-nav links to reflect current route and inform app if available
+        (function() {
+            const navLinks = document.querySelectorAll('.tmc-nav .tmc-link[data-route]');
+            const filename = (window.location.pathname.split('/').pop() || 'index.html');
+            navLinks.forEach(a => {
+                const route = a.getAttribute('data-route');
+                const isActive = route === filename;
+                a.classList.toggle('is-active', isActive);
+                if (isActive) {
+                    a.setAttribute('aria-current', 'page');
+                } else {
+                    a.removeAttribute('aria-current');
+                }
+            });
+
+            if (window.TankManapp && typeof window.TankManapp.highlightNav === 'function') {
+                try {
+                    window.TankManapp.highlightNav(window.location.pathname);
+                } catch (e) {
+                    // ignore
+                }
+            }
+        })();
+
+        // Tank selection interaction
+        const tankCards = document.querySelectorAll('.tank-card');
+        const carouselTanks = document.querySelectorAll('.carousel-tank');
+        
+        function selectTank(tankId) {
+            // Update main tank cards
+            tankCards.forEach(card => {
+                const isSelected = card.dataset.tankId === tankId;
+                card.classList.toggle('active', isSelected);
+                card.setAttribute('aria-pressed', isSelected);
+            });
+            
+            // Update carousel
+            carouselTanks.forEach(tank => {
+                tank.classList.toggle('active', tank.dataset.tankId === tankId);
+            });
+            
+            // Scroll selected tank card into view
+            const selectedCard = document.querySelector(`.tank-card[data-tank-id="${tankId}"]`);
+            if (selectedCard) {
+                selectedCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            // Emit selection event for app integration
+            try {
+                window.dispatchEvent(new CustomEvent('tmc:toggle', { detail: { panel: 'garage', selectedTank: tankId } }));
+            } catch (e) {}
+        }
+        
+        // Main tank card click handlers
+        tankCards.forEach(card => {
+            card.addEventListener('click', function() {
+                selectTank(this.dataset.tankId);
+            });
+            
+            card.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    selectTank(this.dataset.tankId);
+                }
+            });
+        });
+        
+        // Carousel tank click handlers
+        carouselTanks.forEach(tank => {
+            tank.addEventListener('click', function() {
+                selectTank(this.dataset.tankId);
+            });
+        });
+        
+        // Carousel navigation
+        const carouselPrev = document.querySelector('.tank-carousel-bottom .carousel-prev');
+        const carouselNext = document.querySelector('.tank-carousel-bottom .carousel-next');
+        const carouselContainer = document.querySelector('.carousel-items');
+        
+        if (carouselPrev) {
+            carouselPrev.addEventListener('click', function() {
+                carouselContainer.scrollBy({ left: -150, behavior: 'smooth' });
+            });
+        }
+        
+        if (carouselNext) {
+            carouselNext.addEventListener('click', function() {
+                carouselContainer.scrollBy({ left: 150, behavior: 'smooth' });
+            });
+        }
+        
+        // Module slot interactions
+        const moduleSlots = document.querySelectorAll('.module-slot');
+        
+        moduleSlots.forEach(slot => {
+            slot.addEventListener('click', function() {
+                if (!this.classList.contains('active')) {
+                    // Remove active from siblings
+                    const siblings = this.parentElement.querySelectorAll('.module-slot');
+                    siblings.forEach(s => s.classList.remove('active'));
+                    
+                    // Add active to clicked slot
+                    this.classList.add('active');
+                    
+                    // Visual feedback
+                    this.style.transform = 'scale(1.1)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+
+                    // Emit toggle event for this module slot
+                    const slotId = this.dataset.tmcId || null;
+                    try {
+                        window.dispatchEvent(new CustomEvent('tmc:toggle', { detail: { slotId: slotId, state: 'active' } }));
+                    } catch (e) {}
+                }
+            });
+        });
+        
+        // Equip button interaction
+        const equipBtn = document.querySelector('.btn-equip');
+        
+        if (equipBtn) {
+            equipBtn.addEventListener('click', function() {
+                // Visual feedback
+                this.style.transform = 'scale(0.95)';
+                this.textContent = 'EQUIPPED!';
+                
+                setTimeout(() => {
+                    this.style.transform = '';
+                    this.textContent = 'EQUIP UPGRADE';
+                }, 1000);
+                
+                // Add pulsing effect to active modules
+                const activeModules = Array.from(document.querySelectorAll('.module-slot.active'));
+                activeModules.forEach(module => {
+                    module.style.animation = 'pulse 0.5s ease';
+                    setTimeout(() => {
+                        module.style.animation = '';
+                    }, 500);
+                });
+
+                // Gather details for event emission
+                const activeModuleIds = activeModules.map(m => m.dataset.tmcId).filter(Boolean);
+                const activeTankEl = document.querySelector('.tank-card.active');
+                const activeTankTmcId = activeTankEl ? activeTankEl.dataset.tmcId : (activeTankEl ? activeTankEl.dataset.tankId : null);
+
+                // Emit tmc:upgrade-equipped for app to handle
+                try {
+                    window.dispatchEvent(new CustomEvent('tmc:upgrade-equipped', {
+                        detail: {
+                            upgradeId: activeModuleIds,
+                            tankId: activeTankTmcId
+                        }
+                    }));
+                } catch (e) {}
+
+                // Also emit a toast-show event for transient feedback
+                try {
+                    window.dispatchEvent(new CustomEvent('tmc:toast-show', {
+                        detail: {
+                            message: 'Upgrades equipped',
+                            timeout: 3000
+                        }
+                    }));
+                } catch (e) {}
+            });
+        }
+        
+        // Keyboard navigation for tank grid
+        document.addEventListener('keydown', function(e) {
+            const currentActive = document.querySelector('.tank-card.active');
+            if (!currentActive) return;
+            
+            let nextTank = null;
+            const currentId = parseInt(currentActive.dataset.tankId);
+            
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                nextTank = document.querySelector(`.tank-card[data-tank-id="${Math.min(currentId + 1, tankCards.length)}"]`);
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                nextTank = document.querySelector(`.tank-card[data-tank-id="${Math.max(currentId - 1, 1)}"]`);
+            }
+            
+            if (nextTank) {
+                selectTank(nextTank.dataset.tankId);
+                nextTank.focus();
+            }
+        });
+        
+        // Animate stat bars on load
+        window.addEventListener('load', function() {
+            const statBars = document.querySelectorAll('.stat-bar');
+            statBars.forEach((bar, index) => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.transition = 'width 0.8s ease';
+                    bar.style.width = width;
+                }, index * 100);
+            });
+        });
+        
+        // Set initial active carousel tank
+        if (carouselTanks.length > 0) {
+            carouselTanks[0].classList.add('active');
+        }
+    </script>
+
+    <div id="tmc-toast-container" role="status" aria-live="polite"></div>
+</body>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --neon-cyan: #00F0FF;
+    --neon-magenta: #FF00FF;
+    --hot-pink: #FF0099;
+    --deep-navy: #0A0E1A;
+    --dark-blue: #0D1B2E;
+    --rich-purple: #1A0B2E;
+    --bright-cyan: #00FFFF;
+    --purple-glow: #AA00FF;
+    --text-white: #FFFFFF;
+    --text-cyan-light: #CCFFFF;
+
+    /* tmc token mappings for compatibility with external styles.css */
+    --tmc-neon-cyan: var(--neon-cyan);
+    --tmc-neon-magenta: var(--neon-magenta);
+    --tmc-hot-pink: var(--hot-pink);
+    --tmc-deep-navy: var(--deep-navy);
+    --tmc-text-white: var(--text-white);
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: var(--deep-navy);
+    color: var(--text-white);
+    min-height: 100vh;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--neon-cyan);
+    color: var(--deep-navy);
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Header & Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(10, 14, 26, 0.95);
+    backdrop-filter: blur(12px);
+}
+
+.main-nav {
+    border-bottom: 1px solid var(--neon-cyan);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+.nav-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo-section {
+    flex-shrink: 0;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-svg {
+    filter: drop-shadow(0 0 8px var(--neon-cyan));
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-neon {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--neon-cyan);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 8px 0;
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--neon-cyan);
+    box-shadow: 0 0 8px var(--neon-cyan);
+    transition: width 0.3s ease;
+}
+
+.nav-?[TRUNCATED]
