@@ -2802,7 +2802,7 @@ body.gameplay-page main {
   gap: 12px;
 }
 
-.tank-card {
+.tank-cards .tank-card {
   width: 120px;
   height: 80px;
   border: 2px solid var(--neon-cyan);
@@ -2814,7 +2814,7 @@ body.gameplay-page main {
   opacity: 0.5;
 }
 
-.tank-card::before {
+.tank-cards .tank-card::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -2823,17 +2823,17 @@ body.gameplay-page main {
   transition: opacity 0.3s ease;
 }
 
-.tank-card:hover::before {
+.tank-cards .tank-card:hover::before {
   opacity: 1;
 }
 
-.tank-card.active {
+.tank-cards .tank-card.active {
   opacity: 1;
   border-color: var(--neon-magenta);
   box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
 }
 
-.tank-thumbnail {
+.tank-cards .tank-thumbnail {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2841,8 +2841,8 @@ body.gameplay-page main {
   transition: filter 0.3s ease;
 }
 
-.tank-card:hover .tank-thumbnail,
-.tank-card.active .tank-thumbnail {
+.tank-cards .tank-card:hover .tank-thumbnail,
+.tank-cards .tank-card.active .tank-thumbnail {
   filter: brightness(1.2);
 }
 
