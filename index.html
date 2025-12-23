@@ -93,7 +93,7 @@
     <main id="main-content" role="main">
         <section class="hero-section" aria-label="Hero">
             <div class="hero-background">
-                <img src="https://im.runware.ai/image/ws/2/ii/1703a6fc-3eaa-44a4-be76-dbf27834ddec.jpg" alt="Futuristic tank on neon grid battlefield" class="hero-image">
+                <img src="https://im.runware.ai/image/ws/2/ii/4f527666-adae-4a4c-b739-063aeb5d1e02.jpg" alt="Futuristic tank on neon grid battlefield" class="hero-image">
                 <div class="hero-overlay"></div>
                 <div class="grid-overlay"></div>
                 
@@ -540,10 +540,10 @@ header {
 
 .hero-image {
     position: relative;
-    width: auto;
+    width: 100%;
     height: 100%;
-    max-width: min(70vw, 620px);
-    object-fit: contain;
+    max-width: none;
+    object-fit: cover;
     object-position: center;
     filter: brightness(0.7) saturate(1.3);
     z-index: 1;
@@ -551,14 +551,14 @@ header {
 
 @media (min-width: 1200px) {
     .hero-image {
-        max-width: min(55vw, 720px);
+        width: 100%;
     }
 }
 
 @media (max-width: 900px) {
     .hero-image {
-        max-width: 90vw;
-        height: 85vh;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -614,7 +614,7 @@ header {
     z-index: 10;
     text-align: center;
     max-width: 1200px;
-    padding: 140px 40px 120px;
+    padding: 180px 40px 120px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -623,7 +623,7 @@ header {
 }
 
 .hero-content-top {
-    transform: translateY(-80px);
+    margin-top: 24px;
 }
 
 .hero-title {
@@ -891,11 +891,11 @@ header {
     }
 
     .hero-content {
-        padding: 120px 24px 100px;
+        padding: 160px 24px 100px;
     }
 
     .hero-content-top {
-        transform: translateY(-40px);
+        margin-top: 16px;
     }
 
     .hero-content-bottom {
@@ -936,7 +936,7 @@ header {
     }
     
     .hero-content {
-        padding: 110px 20px 90px;
+        padding: 150px 20px 90px;
     }
     
     .title-line-1 {
